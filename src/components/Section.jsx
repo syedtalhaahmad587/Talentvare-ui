@@ -9,7 +9,7 @@ export default function Section({ title, linkText, promoted = false }) {
   return (
     <section className="sec">
       <div className="sec__head">
-        <h3>{title}</h3>
+        <p>{title}</p>
         <a href="/" onClick={(e) => e.preventDefault()}>
           {linkText}
         </a>
