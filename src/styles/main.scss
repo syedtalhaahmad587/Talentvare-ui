@@ -14,7 +14,7 @@ body{ margin:0; background:$bg; color:$text; font-family:'Neue Haas Grotesk Disp
     // max-width:$container; 
     margin:0 auto; 
     padding:0 24px; }
-.page{ margin-top:24px;background: #F4F4F4; }
+.page{ padding-top:24px;background: #F4F4F4; }
 .layout{ display:grid; grid-template-columns:$side-w 1fr; gap:28px;
   @media (max-width:1000px){ grid-template-columns:1fr; }
 }
