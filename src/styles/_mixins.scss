@@ -1,0 +1,10 @@
+@mixin card {
+  background: $card;
+  border: 1px solid rgba(17,24,39,.06);
+  border-radius: $radius-lg;
+  box-shadow: $shadow;
+}
+
+@mixin flex-center {
+  display:flex; align-items:center;
+}

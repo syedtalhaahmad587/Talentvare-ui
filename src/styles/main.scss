@@ -1,0 +1,33 @@
+@import './variables';
+@import './mixins';
+@import './components/navbar';
+@import './components/sidebar';
+@import './components/home';
+@import './components/section';
+@import './components/jobcard';
+
+*{ box-sizing:border-box; }
+html, body, #root{ height:100%; }
+body{ margin:0; background:$bg; color:$text; font-family:'Neue Haas Grotesk Display Pro'; }
+
+.container{ 
+    // max-width:$container; 
+    margin:0 auto; 
+    padding:0 24px; }
+.page{ margin-top:24px;background: #F4F4F4; }
+.layout{ display:grid; grid-template-columns:$side-w 1fr; gap:28px;
+  @media (max-width:1000px){ grid-template-columns:1fr; }
+}
+
+.card{ @include card; }
+
+.btn{ display:inline-flex; align-items:center; gap:8px; border-radius:10px; border:1px solid transparent;
+  padding:10px 16px; font-weight:700; cursor:pointer; line-height:1;
+  &--primary{ background:$primary; color:#fff; box-shadow:0 10px 20px rgba(31,95,214,.22);
+    &:hover{ background:$primary-600; }
+  }
+  &--ghost{ background:#f3f6ff; border:1px solid #e0e7ff; width:40px; height:40px; display:flex; align-items:center; justify-content:center; }
+}
+
+.muted{ color:$muted; }
+.accent{ color:$primary; }

@@ -1,0 +1,42 @@
+.home { padding-bottom:40px; margin-top: 12px }
+
+.hero { @include card; padding:22px; background:#f7f8fb; border-radius:$radius-lg; }
+
+.hero__title h2{ margin:0 0 8px; font-size:22px; font-weight:700; color: #333333; }
+.hero__title p{ margin:0; color:$muted; font-weight:600; font-size:14px; }
+.btn--sea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.margin_auto {
+    margin: auto;
+}
+
+.searchbar{
+  margin-top:18px; background:#fff; border:1px solid $stroke; border-radius:$radius-lg;
+  height:64px; display:grid; grid-template-columns:1fr 16px 200px 16px 160px 140px; align-items:center;
+  padding:0 12px; box-shadow:$shadow-soft;
+
+  &__input { padding:0 12px;
+    input{ width:100%; height:42px; border:none; outline:none; font-size:14px; font-weight: 500; color: #585D6E; }
+  }
+  &__select{ padding:0 12px;
+    select{ width:100%; height:42px; border:none; outline:none; color:$muted; background:transparent; cursor: pointer; }
+  }
+  &__divider{ height:60%; width:1px; background:#e5e7eb; justify-self:center; }
+  &__btn{ height:44px; border-radius:10px; }
+}
+
+.chips{ margin-top:14px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+.chip{
+     
+    color: #737A91;
+    border: 2px solid #737A91;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: 500;
+    font-size: 12px;
+}

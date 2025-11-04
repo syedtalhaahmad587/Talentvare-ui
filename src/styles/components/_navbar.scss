@@ -1,0 +1,28 @@
+.nv {
+  background: #ffff; color:#e6efff; position:"sticky"; top:0; z-index:20;
+  box-shadow: 0 1px 0 rgba(0,0,0,.06);
+
+  &__inner { height:72px; @include flex-center; gap:24px; }
+
+  &__brand { @include flex-center; gap:10px; text-decoration:none; color:#fff; font-weight:700;
+    img{height:28px}
+  }
+
+  &__links { display:flex; gap:24px; font-weight:600;
+    a{ color:#737A91; text-decoration:none;
+      &.is-active{ color:#fff; border-bottom:2px solid #8fb2ff; padding-bottom:4px;}
+      &.ft-jb{ color:#0154AA; font-weight: 700; font-size: 16px; }
+    }
+  }
+
+  &__right { margin-left:auto; @include flex-center; gap:16px; }
+
+  &__search { @include flex-center; gap:10px;
+     border:1px solid #cfe0ff; border-radius:8px;
+    height:36px; padding:0 14px; color: #cfe0ff;
+    background: #cfe0ff;
+    input{ background:transparent; border:none; outline:none; color:gray; width:190px; }
+  }
+
+  &__avatar { width:36px; height:36px; border-radius:50%; border:2px solid #fff; }
+}
